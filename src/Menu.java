@@ -7,6 +7,12 @@ import java.util.List;
  *
  */
 public class Menu {
+    private List<Meal> menuList;
+
+    public void add(String s, Float price){
+        Meal meal = new Meal().create(s,price);
+        menuList.add(meal);
+    }
 
     //todo Создайте свое меню. Должен быть хотя бы один конструктор, который создает объект класса Menu, содержащий список не менее чем из 10 блюд.
     //todo Должно быть не менее 10 блюд.
